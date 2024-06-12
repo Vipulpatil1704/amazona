@@ -15,3 +15,7 @@ When you reference an asset from the public folder, you can use a relative path 
 Root Path Assumption:
 The React development server and the build output serve the contents of the public folder at the root URL (/). Therefore, any file inside public can be accessed with a path relative to this root URL.
 
+3.How to extract parameter from url in react using react-router-dom
+=>This package provides a react hook called useParams() by using this hook it provides the parameter present in the url
+ex   const params =useParams();
+now params contains the js object containing parameter

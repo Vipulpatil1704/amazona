@@ -10,3 +10,9 @@
     3.render Products
     4.style products
 5. Successfully Created Featured products on home screen
+6. Add routing 
+    1. npm i react-router-dom
+    2. create route for home screen
+    3. create router for product screen
+
+7. Successfully created routing for product page

@@ -16,3 +16,6 @@
     3. create router for product screen
 
 7. Successfully created routing for product page
+8. created backend folder to setup server 
+9. fetching prodcts from backend into frontend using axios
+10. Used useReuder instead of useState 

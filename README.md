@@ -19,3 +19,8 @@
 8. created backend folder to setup server 
 9. fetching prodcts from backend into frontend using axios
 10. Used useReuder instead of useState 
+11. Add bootstrap UI framework 
+    1.npm i react-bootstrap bootstrap
+    2.update App.js
+
+12. Added react-bootstrap navbar

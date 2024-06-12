@@ -42,8 +42,12 @@ fetch('/api/products')
 With the proxy set, the development server redirects the request to http://localhost:5000/api/products.
 
 
-6.npm i use-reducer-logger --force
+6. npm i use-reducer-logger --force
 import logger from 'use-reducer-logger'
 This helps to see the reducer actions in console
 =>for this wrap reducer in useReducer inside logger 
 like this const []=useReducer(logger(reducer),);
+
+7. react-bootstrap and bootstrap, react-router-bootstrap 
+
+=>we can use Navbar from react-bootstrap  which requires container and to use routing in navbar use LinkContainer from react-router-bootstrap.

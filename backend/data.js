@@ -9,7 +9,7 @@ const data={
             countInStock:10,
             brand:"Nike",
             rating:4.5,
-            numReview:10,
+            numReviews:10,
             description:'high quality product'
         },
         {
@@ -18,10 +18,10 @@ const data={
             category:"Shirts",
             image:"/images/p2.jpg",
             price:250,
-            countInStock:20,
+            countInStock:0,
             brand:"Adidas",
             rating:4.0,
-            numReview:10,
+            numReviews:10,
             description:'high quality product'
         },
         {
@@ -33,7 +33,7 @@ const data={
             countInStock:15,
             brand:"Nike",
             rating:4.5,
-            numReview:14,
+            numReviews:14,
             description:'high quality product'
         },
         {
@@ -45,7 +45,7 @@ const data={
             countInStock:25,
             brand:"Nike",
             rating:4.5,
-            numReview:13    ,
+            numReviews:13    ,
             description:'high quality product'
         },
         

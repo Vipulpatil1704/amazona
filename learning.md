@@ -51,3 +51,7 @@ like this const []=useReducer(logger(reducer),);
 7. react-bootstrap and bootstrap, react-router-bootstrap 
 
 =>we can use Navbar from react-bootstrap  which requires container and to use routing in navbar use LinkContainer from react-router-bootstrap.
+
+8. using react-helmet-async package we can change the title according to product name.
+=>For this we have to wrap index.js App inside <HelmetProvider>
+=>And wrap title inside <Helmet>

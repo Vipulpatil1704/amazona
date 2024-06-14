@@ -26,3 +26,11 @@
 12. Added react-bootstrap navbar
 13.Created product screen.
 14. Added Error messageBox and Spinner for loading.
+15.Implement Add to cart
+    1.create react content
+    2.define reducer
+    3.create store provider
+    4.implement add to button click handler
+
+16.Implemented Add to cart Successfully
+17.

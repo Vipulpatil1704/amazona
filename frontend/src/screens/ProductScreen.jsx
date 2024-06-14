@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useReducer } from 'react'
+import React, { useContext, useEffect, useReducer } from 'react'
 import { useParams } from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -12,6 +12,7 @@ import {Helmet} from 'react-helmet-async'
 import LoadingBox from '../components/LoadingBox'
 import MessageBox from '../components/MessageBox'
 import getError from '../util'
+import { Store } from '../store'
 const reducer = (state, action) => {
   switch (action.type) {
       case 'FETCH_REQUEST':
@@ -43,6 +44,11 @@ export default function ProductScreen() {
         }
         fetchData();
     }, [slug])
+    const {state,dispatch:ctxDispatch}=useContext(Store);
+    //we have provided this dispatch another name so that to seperate it from above dispatch method.
+    function addToCartHandler(){
+      return ctxDispatch({type:'CART_ADD_ITEM',payload:{...product,quantity:1}})
+    }
   return (
     loading ? <LoadingBox/> : error ? <MessageBox variant="danger">{error}</MessageBox>:<div>
       <Row>
@@ -90,7 +96,7 @@ export default function ProductScreen() {
                 product.countInStock > 0 && (
                   <ListGroup.Item>
                     <div className='d-grid'>
-                      <Button variant="primary">Add to cart</Button>
+                      <Button onClick={addToCartHandler} variant="primary">Add to cart</Button>
                     </div>
                   </ListGroup.Item>
                 )
